@@ -1,0 +1,10 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "test";
+}
+
+<h1>test</h1>
+
+@foreach (string str in Model) {
+    <div>@str.Length</div>
+}

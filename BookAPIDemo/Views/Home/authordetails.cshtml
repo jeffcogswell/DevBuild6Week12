@@ -1,0 +1,22 @@
+﻿@model AuthorDetail
+@{
+    ViewData["Title"] = "authordetails";
+}
+
+<h1>@Model.personal_name</h1>
+
+<div>
+    @Model.bio.value
+</div>
+
+<div>
+    Photo: @Model.photos[0]
+    <img src="https://covers.openlibrary.org/a/id/@(Model.photos[0])-S.jpg" />
+</div>
+
+<div>
+    @foreach (string altname in Model.alternate_names)
+	{
+        <div>@altname</div>
+	}
+</div>

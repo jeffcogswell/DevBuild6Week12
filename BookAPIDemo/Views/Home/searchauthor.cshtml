@@ -1,0 +1,19 @@
+﻿@model Root
+@{
+    ViewData["Title"] = "searchauthor";
+}
+
+<h1>searchauthor</h1>
+
+Number Found: @Model.numFound
+
+Start: @Model.start
+
+numFoundExact: @Model.numFoundExact
+
+@foreach (AuthorDoc doc in Model.docs)
+{
+    <div>
+        <a href="/home/authordetails?key=@doc.key">@doc.name @doc.work_count works, top work @doc.top_work</a>
+    </div>
+}
