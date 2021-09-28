@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// This file should probably actually be in the Models folder, FYI
+
 namespace CardDemo
 {
 	public class Poker
