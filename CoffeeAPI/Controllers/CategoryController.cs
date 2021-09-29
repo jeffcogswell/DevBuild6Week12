@@ -13,7 +13,7 @@ namespace CoffeeAPI.Controllers
 	public class CategoryController : ControllerBase
 	{
 		// https://localhost:44388/api/category
-		[HttpGet]   // or [HttpGet()]
+		[HttpGet("getallcats")]   // or [HttpGet()]
 		public List<Category> getAll()
 		{
 			return DAL.GetAllCategories();
@@ -75,6 +75,20 @@ namespace CoffeeAPI.Controllers
 		public Category getSingleCategoryPractice(string id)
 		{
 			return DAL.GetCategory(id);
+		}
+
+		[HttpGet("testjson")]
+		public Category testjson()
+		{
+			Category cat = new Category();
+			cat.id = "TEST";
+			cat.name = "Some category";
+			cat.description = "A description of this category";
+
+			// Could do this:
+			//return $"{{ \"id\" : \"{cat.id}\", \"name\" : {cat.name}, \"description\" : \"{cat.description}\" }}";
+			// But let's have ASP.NET do that conversion FOR US. It will convert the object into a string containing JSON representing that object.
+			return cat;
 		}
 
 	}

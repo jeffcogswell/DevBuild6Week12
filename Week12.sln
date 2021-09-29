@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardDemo", "CardDemo\CardDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeAPI", "CoffeeAPI\CoffeeAPI.csproj", "{9456C3C3-02DE-4629-A287-6F793CD6DEB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONDemoViaMVC", "JSONDemoViaMVC\JSONDemoViaMVC.csproj", "{4AB3A541-155C-4034-AA01-40AB7529E22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI", "EmployeeAPI\EmployeeAPI.csproj", "{6CB74774-A49C-4F3B-9223-392A680498CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{9456C3C3-02DE-4629-A287-6F793CD6DEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9456C3C3-02DE-4629-A287-6F793CD6DEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9456C3C3-02DE-4629-A287-6F793CD6DEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB3A541-155C-4034-AA01-40AB7529E22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB3A541-155C-4034-AA01-40AB7529E22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB3A541-155C-4034-AA01-40AB7529E22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB3A541-155C-4034-AA01-40AB7529E22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CB74774-A49C-4F3B-9223-392A680498CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB74774-A49C-4F3B-9223-392A680498CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB74774-A49C-4F3B-9223-392A680498CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB74774-A49C-4F3B-9223-392A680498CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
