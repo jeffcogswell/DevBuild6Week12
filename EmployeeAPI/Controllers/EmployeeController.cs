@@ -52,7 +52,7 @@ namespace EmployeeAPI.Controllers
 			return DAL.UpdateEmployee(emp);
 		}
 
-		[HttpGet("search")]
+		[HttpGet("search")] // Example    /api/employee/search?lastname=am
 		public List<Employee> searchLastName(string lastname)
 		{
 			return DAL.SearchByLastName(lastname);
