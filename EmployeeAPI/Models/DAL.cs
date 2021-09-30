@@ -49,5 +49,12 @@ namespace EmployeeAPI.Models
 			DB.Update<Employee>(emp);
 			return emp;
 		}
+
+		public static List<Employee> SearchByLastName(string lastname)
+		{
+			var myparams = new { searchterm = "%" + lastname + "%" };
+			List<Employee> emps = DB.Query<Employee>("select * from employee where lastname like @searchterm", myparams).ToList();
+			return emps;
+		}
 	}
 }

@@ -51,5 +51,11 @@ namespace EmployeeAPI.Controllers
 		{
 			return DAL.UpdateEmployee(emp);
 		}
+
+		[HttpGet("search")]
+		public List<Employee> searchLastName(string lastname)
+		{
+			return DAL.SearchByLastName(lastname);
+		}
 	}
 }
